@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plot Example</title>
+</head>
+<body>
+    <h1>Plot Example</h1>
+    <p>Enter the values for P, l, and the number of x points:</p>
+    <form id="plotForm" method="post" action="/plot" target="plotFrame">
+        <label for="P">P:</label>
+        <input type="text" id="P" name="P" required>
+        <br>
+        <label for="l">l:</label>
+        <input type="text" id="l" name="l" required>
+        <br>
+        <label for="x_points">Number of x points:</label>
+        <input type="text" id="x_points" name="x_points" required>
+        <br><br>
+        <button type="submit">Generate Plot</button>
+    </form>
+    <br>
+    <iframe name="plotFrame" style="width: 600px; height: 400px;"></iframe>
+</body>
+</html>
